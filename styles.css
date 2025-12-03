@@ -1,7 +1,7 @@
 /* 
     This is a CSS comment. Please add your name to this file below:
     
-    NAME: 
+    NAME: Richard Hileman
 */
 /* -------------------------------------------------- */
 /* 
@@ -334,7 +334,25 @@ footer{
         - add the large box shadow
 */
 /* ADD SELECTOR AND STYLES HERE */
+#section2 a:first-of-type{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-display: 1.1rem;
+    font-weight: bold;
+    width: 50%;
+    box-shadow: -6px 6px 10px var(--med-gray);
+}
 
+#section2 a:last-of-type{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-display: 1.1rem;
+    font-weight: bold;
+    width: 50%;
+    box-shadow: -6px 6px 10px var(--med-gray);
+}
 /* For the first link in this section: */
 #section2 a:first-of-type{
     background-color: var(--lt-blue);
@@ -377,7 +395,10 @@ footer{
             - left: 60px
 */
 #section2 div > p:last-of-type{
-    
+    background-color: var(--teal-rgba);
+    border: 4px var(--dk-gray) dashed;
+    margin: 16px 60px 32px 8px;
+    padding: 32px 8px 16px 60px;
 }
 
  /* For the div wrapped around that paragraph to show the space its taking up within its container */
@@ -394,6 +415,10 @@ footer{
         - add the small box shadow, using the variable in the root
 */
 #section2 a:first-of-type:hover{
+    background: var(--dk-blue);
+    color: white;
+    border: var(--lt-blue);
+    --box-shadow-sm: -3px 3px 7px var(--med-gray);
 
 }
 
@@ -418,7 +443,11 @@ footer{
         - add the small filter drop shadow from the CSS variables in the root
 */
 #section3 img{
-    
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: center;
+    --filter-shadow-sm: drop-shadow(-3px 3px 7px var(--med-gray))
 }
 
 #section3 div::before{
@@ -460,6 +489,16 @@ footer{
         - move this to the right from its original location by 25px
 */
 #section3 div::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--lt-blue);
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    bottom: 50px;
+    left: 25px;
 }
 
 
@@ -481,6 +520,7 @@ footer{
             - left: 0
 */
 #section4 p:last-of-type{
+    margin: 1rem 0 1rem 0;
 
 }
 
@@ -545,6 +585,9 @@ footer{
         - add the wood background texture from the images folder
 */
 #pattern1{
+    background-color: var(--light-gray);
+    background-size: 110%;
+    background-image: url(images/wood.png);
     
 }
 
@@ -602,6 +645,7 @@ footer{
         - float the image to the right
 */
 #dog-house{
+    float: right;
     
 }
 
@@ -611,7 +655,7 @@ footer{
         - clear any floats
 */
 #section9{
-    
+    clear: both;
 }
 
 /* ------------- SECTION 9 STYLES ---------------- */
